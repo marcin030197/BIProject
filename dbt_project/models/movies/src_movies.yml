@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: public
+    description: public
+    database: my_app
+    schema: public
+    tables:
+      - name: imdb_movies_shows
