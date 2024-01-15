@@ -1,0 +1,22 @@
+my_app: 
+  outputs:    
+    public:
+      type: postgres
+      threads: 6
+      host: localhost
+      port: 5432
+      user: postgres
+      pass: password
+      dbname: my_app
+      schema: public
+  outputs:    
+    dwh:
+      type: postgres
+      threads: 6
+      host: localhost
+      port: 5432
+      user: postgres
+      pass: password
+      dbname: my_app
+      schema: DWH
+  target: dwh
