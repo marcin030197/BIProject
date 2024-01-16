@@ -13,4 +13,4 @@ select
 	fm.imdb_votes,
 	dg.id as id_genre
 from {{ ref('stg_movies') }} fm 
-inner join dwh.d_genres  dg on dg.genre=fm.genre 
+inner join dwh.{{ ref('d_genres') }}  dg on dg.genre=fm.genre 
